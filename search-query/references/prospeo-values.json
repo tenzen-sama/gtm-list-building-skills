@@ -1,0 +1,1067 @@
+{
+ "_note": "Prospeo's official lists of allowed filter values, downloaded from prospeo.io/api-docs/enum/* on 22 Nov 2026. Values must match exactly (Prospeo rejects others with INVALID_FILTERS). Refresh by downloading the pages again; do not edit by hand.",
+ "sources": {
+  "industries": {
+   "url": "https://prospeo.io/api-docs/enum/industries",
+   "page_last_updated": "4 Feb 2026"
+  },
+  "seniorities": {
+   "url": "https://prospeo.io/api-docs/enum/seniorities",
+   "page_last_updated": "4 Feb 2026"
+  },
+  "departments": {
+   "url": "https://prospeo.io/api-docs/enum/departments",
+   "page_last_updated": "11 Jun 2026"
+  },
+  "employee_ranges": {
+   "url": "https://prospeo.io/api-docs/enum/employee-ranges",
+   "page_last_updated": "not shown"
+  }
+ },
+ "industries": [
+  "IT Services and IT Consulting",
+  "Construction",
+  "Business Consulting and Services",
+  "General Retail",
+  "Advertising Services",
+  "Real Estate",
+  "Software Development",
+  "Medical Practices",
+  "Financial Services",
+  "Technology, Information and Internet",
+  "Restaurants",
+  "Hospitals and Health Care",
+  "Wellness and Fitness Services",
+  "Design Services",
+  "Non-profit Organizations",
+  "Individual and Family Services",
+  "Hospitality",
+  "Appliances, Electrical, and Electronics Manufacturing",
+  "Motor Vehicle Manufacturing",
+  "Professional Training and Coaching",
+  "Food and Beverage Services",
+  "Education Administration Programs",
+  "Consumer Services",
+  "Accounting",
+  "General Wholesale",
+  "Civic and Social Organizations",
+  "Architecture and Planning",
+  "Truck and Railroad Transportation",
+  "Spectator Sports",
+  "Entertainment Providers",
+  "Retail Apparel and Fashion",
+  "Higher Education",
+  "Industrial Machinery Manufacturing",
+  "Insurance",
+  "Machinery Manufacturing",
+  "Legal Services",
+  "General Manufacturing",
+  "Events Services",
+  "Travel Arrangements",
+  "Human Resources Services",
+  "Law Practice",
+  "Media Production and Publishing",
+  "Food and Beverage Manufacturing",
+  "Staffing and Recruiting",
+  "Marketing Services",
+  "Renewable Energy",
+  "Research Services",
+  "Facilities Services",
+  "Environmental Services",
+  "Telecommunications",
+  "Transportation, Logistics, Supply Chain and Storage",
+  "Electric Power Generation",
+  "E-Learning Providers",
+  "Oil, Gas, and Mining",
+  "Arts and Crafts",
+  "Photography",
+  "Venture Capital and Private Equity Principals",
+  "Music",
+  "Retail Office Equipment",
+  "Farming",
+  "Wholesale Building Materials",
+  "Furniture and Home Furnishings Manufacturing",
+  "Government Administration",
+  "Investment Management",
+  "Civil Engineering",
+  "Primary and Secondary Education",
+  "Medical Equipment Manufacturing",
+  "Textile Manufacturing",
+  "Public Relations and Communications Services",
+  "Printing Services",
+  "Religious Institutions",
+  "Artists and Writers",
+  "Personal Care Product Manufacturing",
+  "International Trade and Development",
+  "Mental Health Care",
+  "Chemical Manufacturing",
+  "Pharmaceutical Manufacturing",
+  "Utilities",
+  "Information Services",
+  "Security and Investigations",
+  "Wholesale Import and Export",
+  "Banking",
+  "Biotechnology Research",
+  "Recreational Facilities",
+  "Automation Machinery Manufacturing",
+  "Plastics Manufacturing",
+  "Automotive",
+  "Retail Groceries",
+  "Freight and Package Transportation",
+  "Computer and Network Security",
+  "Computer Games",
+  "Veterinary Services",
+  "Airlines and Aviation",
+  "Maritime Transportation",
+  "Executive Offices",
+  "Sporting Goods Manufacturing",
+  "Market Research",
+  "Mechanical or Industrial Engineering",
+  "Aviation and Aerospace Component Manufacturing",
+  "Strategic Management Services",
+  "Consumer Goods",
+  "Engineering Services",
+  "Museums, Historical Sites, and Zoos",
+  "Investment, Funds and Trusts",
+  "Philanthropic Fundraising Services",
+  "Human Resources",
+  "Computer Hardware",
+  "E-Learning",
+  "Translation and Localization",
+  "Public Safety",
+  "Business Supplies and Equipment",
+  "Defense and Space Manufacturing",
+  "Glass, Ceramics and Concrete Manufacturing",
+  "Warehousing and Storage",
+  "Alternative Medicine",
+  "Animation and Post-production",
+  "Think Tanks",
+  "Semiconductor Manufacturing",
+  "Building Materials",
+  "Capital Markets",
+  "Interior Design",
+  "Political Organizations",
+  "Fundraising",
+  "Law Enforcement",
+  "Cosmetics",
+  "Wireless Services",
+  "Sports Teams and Clubs",
+  "Retail Health and Personal Care Products",
+  "Professional Services",
+  "Social Networking Platforms",
+  "Dairy Product Manufacturing",
+  "Gambling Facilities and Casinos",
+  "Internet Marketplace Platforms",
+  "Shipbuilding",
+  "Luxury Goods and Jewelry",
+  "Libraries",
+  "Ranching and Fisheries",
+  "Online and Mail Order Retail",
+  "Community Services",
+  "Blockchain Services",
+  "Food and Beverage Retail",
+  "Retail Motor Vehicles",
+  "Data Infrastructure and Analytics",
+  "Wine and Spirits",
+  "Sports and Recreation Instruction",
+  "Paper and Forest Products",
+  "Agriculture, Construction, Mining Machinery Manufacturing",
+  "Home Health Care Services",
+  "Vehicle Repair and Maintenance",
+  "Business Content",
+  "General Repair and Maintenance",
+  "Maritime",
+  "Packaging and Containers",
+  "Industry Associations",
+  "Retail Furniture and Home Furnishings",
+  "Tobacco Manufacturing",
+  "Pet Services",
+  "Landscaping Services",
+  "Alternative Dispute Resolution",
+  "Dentists",
+  "Wholesale Food and Beverage",
+  "Fabricated Metal Products",
+  "Aviation & Aerospace",
+  "Railroad Equipment Manufacturing",
+  "Mobile Gaming Apps",
+  "Administrative and Support Services",
+  "Apparel Manufacturing",
+  "Nanotechnology Research",
+  "Specialty Trade Contractors",
+  "Janitorial Services",
+  "Physical, Occupational and Speech Therapists",
+  "Medical and Diagnostic Laboratories",
+  "Professional Organizations",
+  "Philanthropy",
+  "Digital Accessibility Services",
+  "Fashion Accessories Manufacturing",
+  "Semiconductors",
+  "Wholesale Motor Vehicles and Parts",
+  "HVAC and Refrigeration Equipment Manufacturing",
+  "Schools",
+  "Wood Product Manufacturing",
+  "Fire Protection",
+  "Retail Office Supplies and Gifts",
+  "Equipment Rental Services",
+  "Movies, Videos and Sound",
+  "Ground Passenger Transportation",
+  "Wholesale Hardware, Plumbing, Heating Equipment",
+  "Housing and Community Development",
+  "Robotics Engineering",
+  "Wholesale Chemical and Allied Products",
+  "Building Finishing Contractors",
+  "Child Day Care Services",
+  "Radio and Television Broadcasting",
+  "Paint, Coating, and Adhesive Manufacturing",
+  "Building Structure and Exterior Contractors",
+  "Retail Pharmacies",
+  "Retail Building Materials and Garden Equipment",
+  "Waste Treatment and Disposal",
+  "Wholesale Machinery",
+  "Metal Treatments",
+  "Accommodation Services",
+  "Horticulture",
+  "Water Supply and Irrigation Systems",
+  "Building Equipment Contractors",
+  "Waste Collection",
+  "Executive Search Services",
+  "Telephone Call Centers",
+  "Mobile Food Services",
+  "Data Security Software Products",
+  "Taxi and Limousine Services",
+  "Retail Florists",
+  "Metalworking Machinery Manufacturing",
+  "Plastics and Rubber Product Manufacturing",
+  "Climate Technology Product Manufacturing",
+  "Golf Courses and Country Clubs",
+  "Loan Brokers",
+  "Water, Waste, Steam, and Air Conditioning Services",
+  "Office Administration",
+  "Wholesale Metals and Minerals",
+  "Construction Hardware Manufacturing",
+  "Surveying and Mapping Services",
+  "Air, Water, and Waste Program Management",
+  "Measuring and Control Instrument Manufacturing",
+  "Leather Product Manufacturing",
+  "Animal Feed Manufacturing",
+  "Wholesale Furniture and Home Furnishings",
+  "Wholesale Recyclable Materials",
+  "Wholesale Drugs and Sundries",
+  "Theater Companies",
+  "Wholesale Apparel and Sewing Supplies",
+  "Wholesale Computer Equipment",
+  "Household, Laundry and Drycleaning Services",
+  "Distilleries",
+  "Breweries",
+  "Wineries",
+  "Optometrists",
+  "Dance Companies",
+  "Retail Recyclable Materials & Used Merchandise",
+  "Utility System Construction",
+  "Vocational Rehabilitation Services",
+  "Amusement Parks and Arcades",
+  "Retail Musical Instruments",
+  "Turned Products and Fastener Manufacturing",
+  "Engines and Power Transmission Equipment Manufacturing",
+  "Transportation Equipment Manufacturing",
+  "Collection Agencies",
+  "Utilities Administration",
+  "Credit Intermediation",
+  "Housing and Socio-Economic Programs",
+  "Securities and Commodity Exchanges",
+  "Boilers, Tanks, and Shipping Container Manufacturing",
+  "Claims Adjusting, Actuarial Services",
+  "Ambulance Services",
+  "Mattress and Blinds Manufacturing",
+  "Regenerative Design",
+  "Primary Metal Manufacturing"
+ ],
+ "seniorities": [
+  "Founder/Owner",
+  "C-Suite",
+  "Partner",
+  "Vice President",
+  "Head",
+  "Director",
+  "Manager",
+  "Senior",
+  "Entry",
+  "Intern"
+ ],
+ "employee_ranges": [
+  "1-10",
+  "11-20",
+  "21-50",
+  "51-100",
+  "101-200",
+  "201-500",
+  "501-1000",
+  "1001-2000",
+  "2001-5000",
+  "5001-10000",
+  "10000+"
+ ],
+ "departments": [
+  {
+   "name": "C-Suite",
+   "parent": null
+  },
+  {
+   "name": "Chief Executive",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Finance Executive",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Founder",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Human Resources Executive",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Information Technology Executive",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Legal Executive",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Marketing Executive",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Medical & Health Executive",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Operations Executive",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Sales Leader",
+   "parent": "C-Suite"
+  },
+  {
+   "name": "Product",
+   "parent": null
+  },
+  {
+   "name": "Product Development",
+   "parent": "Product"
+  },
+  {
+   "name": "Product Management",
+   "parent": "Product"
+  },
+  {
+   "name": "Other Product",
+   "parent": "Product"
+  },
+  {
+   "name": "Engineering & Technical",
+   "parent": null
+  },
+  {
+   "name": "Engineering & Technical",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Artificial Intelligence / Machine Learning",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Bioengineering",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Biometrics",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Business Intelligence",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Chemical Engineering",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Data Science & Analysis",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "DevOps",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Digital Transformation",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Emerging Technology / Innovation",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Industrial Engineering",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Mechanic",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Mobile Development",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Project Management",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Research & Development",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Scrum Master / Agile Coach",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Software Development",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Technician",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Technology Operations",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Test / Quality Assurance",
+   "parent": "Engineering & Technical"
+  },
+  {
+   "name": "Design",
+   "parent": null
+  },
+  {
+   "name": "Other Design",
+   "parent": "Design"
+  },
+  {
+   "name": "Graphic / Visual / Brand Design",
+   "parent": "Design"
+  },
+  {
+   "name": "Education & Coaching",
+   "parent": null
+  },
+  {
+   "name": "Teacher",
+   "parent": "Education & Coaching"
+  },
+  {
+   "name": "Superintendent",
+   "parent": "Education & Coaching"
+  },
+  {
+   "name": "Professor",
+   "parent": "Education & Coaching"
+  },
+  {
+   "name": "Coach / Trainer",
+   "parent": "Education & Coaching"
+  },
+  {
+   "name": "Finance",
+   "parent": null
+  },
+  {
+   "name": "Financial Reporting",
+   "parent": "Finance"
+  },
+  {
+   "name": "Financial Systems",
+   "parent": "Finance"
+  },
+  {
+   "name": "Accounting",
+   "parent": "Finance"
+  },
+  {
+   "name": "Finance & Banking",
+   "parent": "Finance"
+  },
+  {
+   "name": "Financial Planning, Strategy & Analysis",
+   "parent": "Finance"
+  },
+  {
+   "name": "Internal Audit & Control",
+   "parent": "Finance"
+  },
+  {
+   "name": "Investor Relations",
+   "parent": "Finance"
+  },
+  {
+   "name": "Mergers & Acquisitions",
+   "parent": "Finance"
+  },
+  {
+   "name": "Real Estate Finance",
+   "parent": "Finance"
+  },
+  {
+   "name": "Financial Risk",
+   "parent": "Finance"
+  },
+  {
+   "name": "Sourcing / Procurement",
+   "parent": "Finance"
+  },
+  {
+   "name": "Tax",
+   "parent": "Finance"
+  },
+  {
+   "name": "Treasury",
+   "parent": "Finance"
+  },
+  {
+   "name": "Human Resources",
+   "parent": null
+  },
+  {
+   "name": "Compensation & Benefits",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "Culture, Diversity & Inclusion",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "Health & Safety",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "Other Human Resources",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "HR Business Partner",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "Learning & Development",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "Organizational Development",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "Recruiting & Talent Acquisition",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "Talent Management",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "Workforce Management",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "People Operations",
+   "parent": "Human Resources"
+  },
+  {
+   "name": "Information Technology",
+   "parent": null
+  },
+  {
+   "name": "Cloud Engineering",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Data Center",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Data Warehouse",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Database Administration",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "eCommerce Development",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Help Desk / Desktop Services",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Information Security",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "IT Asset Management",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "IT Audit / IT Compliance",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "IT Recruitement",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "IT Procurement",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "IT Strategy",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "IT Training",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Networking",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Technical Lead",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Quality Assurance",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Retail / Store Systems",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Servers",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Disaster Recovery",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Telecommunications",
+   "parent": "Information Technology"
+  },
+  {
+   "name": "Legal",
+   "parent": null
+  },
+  {
+   "name": "Compliance",
+   "parent": "Legal"
+  },
+  {
+   "name": "Contracts",
+   "parent": "Legal"
+  },
+  {
+   "name": "Corporate Secretary",
+   "parent": "Legal"
+  },
+  {
+   "name": "eDiscovery",
+   "parent": "Legal"
+  },
+  {
+   "name": "Ethics",
+   "parent": "Legal"
+  },
+  {
+   "name": "Governance",
+   "parent": "Legal"
+  },
+  {
+   "name": "Governmental Affairs & Regulatory Law",
+   "parent": "Legal"
+  },
+  {
+   "name": "Intellectual Property & Patent",
+   "parent": "Legal"
+  },
+  {
+   "name": "Labor & Employment",
+   "parent": "Legal"
+  },
+  {
+   "name": "Lawyer / Attorney",
+   "parent": "Legal"
+  },
+  {
+   "name": "Other Legal",
+   "parent": "Legal"
+  },
+  {
+   "name": "Legal Counsel",
+   "parent": "Legal"
+  },
+  {
+   "name": "Legal Operations",
+   "parent": "Legal"
+  },
+  {
+   "name": "Litigation",
+   "parent": "Legal"
+  },
+  {
+   "name": "Privacy",
+   "parent": "Legal"
+  },
+  {
+   "name": "Marketing",
+   "parent": null
+  },
+  {
+   "name": "Advertising",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Brand Management",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Content Marketing",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Customer Experience",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Customer Marketing",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Growth & Demand Generation",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Digital Marketing",
+   "parent": "Marketing"
+  },
+  {
+   "name": "eCommerce Marketing",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Event & Field Marketing",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Lead Generation",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Marketing Operations",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Product Marketing",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Public Relations",
+   "parent": "Marketing"
+  },
+  {
+   "name": "SEO",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Social Media Marketing",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Technical Marketing",
+   "parent": "Marketing"
+  },
+  {
+   "name": "Medical & Health",
+   "parent": null
+  },
+  {
+   "name": "Anesthesiology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Chiropractics",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Clinical Systems",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Dentistry",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Dermatology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Doctors / Physicians",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Epidemiology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Fire Responder",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Infectious Disease",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Medical Administration",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Medical Education & Training",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Clinical Research",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Neurology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Nursing",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Nutrition & Dietetics",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Obstetrics / Gynecology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Oncology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Opthalmology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Optometry",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Orthopedics",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Radiology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Public Health",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Psychology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Psychiatry",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Physical Therapy",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Pharmacy",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Pediatrics",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Pathology",
+   "parent": "Medical & Health"
+  },
+  {
+   "name": "Consulting",
+   "parent": null
+  },
+  {
+   "name": "Consultant",
+   "parent": "Consulting"
+  },
+  {
+   "name": "Sales",
+   "parent": null
+  },
+  {
+   "name": "Other Sales",
+   "parent": "Sales"
+  },
+  {
+   "name": "Sales Training",
+   "parent": "Sales"
+  },
+  {
+   "name": "Sales Operations",
+   "parent": "Sales"
+  },
+  {
+   "name": "Sales Engineering",
+   "parent": "Sales"
+  },
+  {
+   "name": "Sales Enablement",
+   "parent": "Sales"
+  },
+  {
+   "name": "Revenue Operations",
+   "parent": "Sales"
+  },
+  {
+   "name": "Partnerships",
+   "parent": "Sales"
+  },
+  {
+   "name": "Sales Development",
+   "parent": "Sales"
+  },
+  {
+   "name": "Account Executive",
+   "parent": "Sales"
+  },
+  {
+   "name": "Field / Outside Sales",
+   "parent": "Sales"
+  },
+  {
+   "name": "Customer Success",
+   "parent": "Sales"
+  },
+  {
+   "name": "Customer Retention & Development",
+   "parent": "Sales"
+  },
+  {
+   "name": "Channel Sales",
+   "parent": "Sales"
+  },
+  {
+   "name": "Account Management",
+   "parent": "Sales"
+  },
+  {
+   "name": "Operations",
+   "parent": null
+  },
+  {
+   "name": "Supply Chain",
+   "parent": "Operations"
+  },
+  {
+   "name": "Store Operations",
+   "parent": "Operations"
+  },
+  {
+   "name": "Safety",
+   "parent": "Operations"
+  },
+  {
+   "name": "Real Estate",
+   "parent": "Operations"
+  },
+  {
+   "name": "Quality Management",
+   "parent": "Operations"
+  },
+  {
+   "name": "Physical Security",
+   "parent": "Operations"
+  },
+  {
+   "name": "Office Operations",
+   "parent": "Operations"
+  },
+  {
+   "name": "Logistics",
+   "parent": "Operations"
+  },
+  {
+   "name": "Leasing",
+   "parent": "Operations"
+  },
+  {
+   "name": "Facilities Management",
+   "parent": "Operations"
+  },
+  {
+   "name": "Customer Service / Support",
+   "parent": "Operations"
+  },
+  {
+   "name": "Corporate Strategy",
+   "parent": "Operations"
+  },
+  {
+   "name": "Construction",
+   "parent": "Operations"
+  },
+  {
+   "name": "Call Center",
+   "parent": "Operations"
+  }
+ ],
+ "headcount_growth_departments": [
+  "Medical",
+  "Sales",
+  "HR",
+  "Legal",
+  "Marketing",
+  "Finance",
+  "Technical",
+  "Consulting",
+  "Operations",
+  "Product",
+  "General management",
+  "Administrative",
+  "Customer service",
+  "Project management",
+  "Design / UI / UX",
+  "Research",
+  "Trades",
+  "Real estate",
+  "Education"
+ ]
+}

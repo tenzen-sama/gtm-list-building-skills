@@ -1,0 +1,200 @@
+{
+  "_note": "Apollo industry tag IDs. Statuses: confirmed = from the user's own link with only that industry ticked; probable = consistent with the user's links and an outside list, not yet confirmed one by one; unverified = outside list only; conflict = disputed, never used. Add or confirm an industry with scripts/apollo_links.py learn-industry. Names follow Apollo's older LinkedIn-style industry names; aliases are other names users may type.",
+  "industries": [
+    {
+      "name": "Construction",
+      "id": "5567cd4773696439dd350000",
+      "status": "confirmed",
+      "source": "User's single-industry Apollo company link, 22 Nov 2026"
+    },
+    {
+      "name": "Real Estate",
+      "id": "5567cd477369645401010000",
+      "status": "confirmed",
+      "source": "User's single-industry Apollo company link, 22 Nov 2026"
+    },
+    {
+      "name": "Medical Devices",
+      "id": "5567e1b97369641ea9690200",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Hospital & Health Care",
+      "id": "5567cdde73696439812c0000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Biotechnology",
+      "id": "5567d08e7369645dbc4b0000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Chemicals",
+      "id": "5567e21e73696426a1030000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Medical Practice",
+      "id": "5567d0467369645dbc200000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Pharmaceuticals",
+      "id": "5567e0eb73696410e4bd1200",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Research",
+      "id": "5567e09f736964160ebb0100",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Information Technology & Services",
+      "id": "5567cd4773696439b10b0000",
+      "status": "probable",
+      "source": "In the user's people-search links for software, IT services, computer and network security and computer hardware (17-22 Nov 2026); named by the walutani1 seed list",
+      "aliases": [
+        "IT Services",
+        "IT Services and IT Consulting"
+      ]
+    },
+    {
+      "name": "Animation",
+      "id": "5567e1337369641ad2970000",
+      "status": "conflict",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified",
+      "note": "The seed list gives this same ID to Animation and Industrial Automation, so at least one is wrong"
+    },
+    {
+      "name": "Industrial Automation",
+      "id": "5567e1337369641ad2970000",
+      "status": "conflict",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified",
+      "note": "The seed list gives this same ID to Animation and Industrial Automation, so at least one is wrong"
+    },
+    {
+      "name": "Computer Games",
+      "id": "5567cd8b736964540d0f0000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Computer Software",
+      "id": "5567cd4e7369643b70010000",
+      "status": "probable",
+      "source": "In the user's people-search links for software, IT services, computer and network security and computer hardware (17-22 Nov 2026); named by the walutani1 seed list",
+      "aliases": [
+        "Software",
+        "Software Development"
+      ]
+    },
+    {
+      "name": "Staffing & Recruiting",
+      "id": "5567e09973696410db020800",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Semiconductors",
+      "id": "5567e0d87369640e5aa30c00",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Mechanical or Industrial Engineering",
+      "id": "5567ce2673696453d95c0000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Consumer Services",
+      "id": "5567d1127261697f2b1d0000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Computer & Network Security",
+      "id": "5567cd877369644cf94b0000",
+      "status": "probable",
+      "source": "In the user's people-search links for software, IT services, computer and network security and computer hardware (17-22 Nov 2026); named by the walutani1 seed list (labelled \"Consumer & Network Security\" there)",
+      "aliases": [
+        "Consumer & Network Security",
+        "Computer and Network Security",
+        "Cybersecurity"
+      ]
+    },
+    {
+      "name": "Computer Hardware",
+      "id": "5567e0d47369641233eb0600",
+      "status": "probable",
+      "source": "In the user's people-search links for software, IT services, computer and network security and computer hardware (17-22 Nov 2026); named by the walutani1 seed list"
+    },
+    {
+      "name": "Computer Networking",
+      "id": "5567cdbe7369643b78360000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Information Services",
+      "id": "5567e0c97369640d2b3b1600",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Internet",
+      "id": "5567cd4d736964397e020000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Telecommunications",
+      "id": "5567cd4c7369644d39080000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Electrical/Electronic Manufacturing",
+      "id": "5567cd4c73696439c9030000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Food & Beverages",
+      "id": "5567ce1e7369643b806a0000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Food Production",
+      "id": "5567e1b3736964208b280000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Farming",
+      "id": "5567cd4f7369644d2d010000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Ranching",
+      "id": "5567fd5a73696442b0f20000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    },
+    {
+      "name": "Health, Wellness & Fitness",
+      "id": "5567cddb7369644d250c0000",
+      "status": "unverified",
+      "source": "walutani1/apollo-url-builder seed list (MIT, read 22 Nov 2026); outside source, unverified"
+    }
+  ]
+}

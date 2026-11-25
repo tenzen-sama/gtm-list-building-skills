@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: local-business-consumer-method
+expected_outcome: |
+  Treated as a local/consumer client: no firmographic table for customers; the profile uses catchment, demographics and behaviour from the bookings summary; persona is the main output. Answer key from reviews.md: small classes or personal attention 5 of 15 (reviews 1, 5, 9, 12, 15); close to home or work and early before traffic 4 (2, 6, 10, 14); peak classes full 3 (3, 7, 11); price 3 (4, 8, 13). Alternatives: a big gym 4 (1, 5, 8, 12), home or phone workouts 2 (4, 15), another studio 1 (9), physiotherapy 1 (13). Capacity: 952 places a week; peak classes 95% full, noon 30%, so delivery binds at peak times. Sizing via tam_calc.py with customers and annual_value and a delivery cap. Pain reported in aggregate with no reviewer names. Pack 1 is ad audiences and local channels. Because the user asked for one go, later outputs are labelled 'Draft: ICP not reviewed'.
+context:
+  scaffold_script: place-files.sh

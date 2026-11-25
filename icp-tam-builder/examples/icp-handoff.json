@@ -1,0 +1,244 @@
+{
+  "_note": "Illustrative handoff file for the dental-clinic example. Matches examples/scoring-model.json. Format: references/handoff-format.md.",
+  "handoff_version": "1",
+  "client": {
+    "name": "Example dental booking software (illustrative)",
+    "website": "https://example.test",
+    "client_type": "b2b_software"
+  },
+  "offer": {
+    "in_scope": "Booking software for private dental clinics, about USD 4,800 a year",
+    "why_this_offer": "The client's only product",
+    "status": "untested",
+    "candidate_offers": [
+      {
+        "id": "A",
+        "name": "One booking diary across all your branches",
+        "value_type": "saves time",
+        "frame": "the solution itself",
+        "segment": "Tier 1",
+        "proof": "T1, T3 (illustrative)",
+        "status": "untested"
+      },
+      {
+        "id": "B",
+        "name": "A free check of how many booking calls go unanswered",
+        "value_type": "makes money",
+        "frame": "something useful given first",
+        "segment": "Tier 1 with no visible signal",
+        "proof": "[Assumption]",
+        "status": "untested"
+      }
+    ],
+    "no_signal_offer": "B"
+  },
+  "evidence": {
+    "tier": "Grounded",
+    "label": "Early Customer Profile",
+    "comparable_customers": 4,
+    "floor": 8,
+    "bar": 40
+  },
+  "review": {
+    "status": "reviewed",
+    "reviewed_by": "the user (illustrative)",
+    "reviewed_on": "2026-11-17"
+  },
+  "built_from": {
+    "brief": "clients/example-dental/brief.md",
+    "date": "2026-11-17"
+  },
+  "scoring_model": {
+    "file": "scoring-model.json",
+    "version": "2.0"
+  },
+  "icp_sentence": "Private dental clinics in Lagos, Abuja and Port Harcourt that are losing bookings to unanswered phone calls, with 10 to 50 staff and a dedicated practice manager",
+  "pain_hypothesis": false,
+  "tiers": [
+    {
+      "tier": "T1",
+      "description": "Private dental clinics, 10 to 50 staff, with a practice manager, in the three cities",
+      "filters": [
+        {
+          "attribute": "industry",
+          "values": [
+            "private dental clinic"
+          ],
+          "kind": "firmographic",
+          "why_it_matters": "The offer is dental booking software",
+          "evidence": "All 4 won calls are dental clinics (illustrative)",
+          "confidence": "High"
+        },
+        {
+          "attribute": "location",
+          "values": [
+            "Lagos",
+            "Abuja",
+            "Port Harcourt"
+          ],
+          "kind": "geographic",
+          "why_it_matters": "The client serves only these cities",
+          "evidence": "Blocking question 3: the client serves these three cities only (illustrative)",
+          "confidence": "High"
+        },
+        {
+          "attribute": "employees",
+          "values": {
+            "min": 10,
+            "max": 50
+          },
+          "kind": "firmographic",
+          "why_it_matters": "Enough bookings to lose, too small for a call centre",
+          "evidence": "Separator test, 4 won v 2 lost (illustrative)",
+          "confidence": "Medium"
+        },
+        {
+          "attribute": "role_present",
+          "values": [
+            "practice manager"
+          ],
+          "kind": "firmographic",
+          "why_it_matters": "Someone owns the diary and the missed calls",
+          "evidence": "Champion on 3 of 4 won calls (illustrative)",
+          "confidence": "Medium"
+        },
+        {
+          "attribute": "online_booking",
+          "values": [
+            "yes"
+          ],
+          "kind": "operational",
+          "why_it_matters": "Already used to booking online, so the switch is small",
+          "evidence": "Separator test (illustrative)",
+          "confidence": "Medium"
+        },
+        {
+          "attribute": "branches",
+          "values": {
+            "min": 2
+          },
+          "kind": "firmographic",
+          "why_it_matters": "One diary across branches is the value only the client gives",
+          "evidence": "Why they buy: T1 and T3 (illustrative)",
+          "confidence": "Medium"
+        }
+      ]
+    },
+    {
+      "tier": "T2",
+      "description": "The same clinics with 51 to 100 staff",
+      "direction": "size band",
+      "direction_evidence": "One won call at 60 staff shows the same pain (illustrative)",
+      "filters": [
+        {
+          "attribute": "employees",
+          "values": {
+            "min": 51,
+            "max": 100
+          },
+          "kind": "firmographic",
+          "why_it_matters": "Same missed-call pain at higher volume",
+          "evidence": "T4 (illustrative)",
+          "confidence": "Low"
+        }
+      ]
+    }
+  ],
+  "disqualifiers": [
+    {
+      "rule": "current customers and open deals",
+      "reason": "do not prospect",
+      "evidence": "Client's CRM export (illustrative)"
+    },
+    {
+      "rule": "outside Lagos, Abuja and Port Harcourt",
+      "reason": "outside the cities served",
+      "evidence": "Blocking question 3: the client serves these three cities only (illustrative)"
+    },
+    {
+      "rule": "government-owned",
+      "reason": "public procurement not supported",
+      "evidence": "Lost deals T4 and T5 (illustrative)"
+    }
+  ],
+  "roles": [
+    {
+      "role": "champion",
+      "titles": [
+        "Practice Manager",
+        "Clinic Manager",
+        "Operations Manager"
+      ],
+      "evidence": "3 of 4 won calls (illustrative)"
+    },
+    {
+      "role": "economic_buyer",
+      "titles": [
+        "Owner",
+        "Principal Dentist",
+        "Medical Director"
+      ],
+      "evidence": "Signed on 4 of 4 won calls (illustrative)"
+    }
+  ],
+  "signals": [
+    {
+      "name": "2+ reviews in 90 days say calls or bookings go unanswered",
+      "where": "Google reviews",
+      "dated": true,
+      "max_age_days": 90,
+      "why_now": "Patients are being lost this month",
+      "reliability": "High",
+      "reliability_reason": "dated, public, and seen before 3 of 4 wins",
+      "link_to_pain": "Step 4 heuristic for the top pain (unanswered calls, 3 of 4 wins) (illustrative)",
+      "scoring_field": "booking_complaint_reviews_90d"
+    },
+    {
+      "name": "Hiring front-desk staff",
+      "where": "Job boards, careers page",
+      "dated": true,
+      "max_age_days": 90,
+      "why_now": "The front desk is overstretched now",
+      "reliability": "Medium",
+      "reliability_reason": "dated, but hiring can mean normal turnover",
+      "link_to_pain": "Look-back: front-desk job post before 3 of 4 wins, 0 of 2 losses (illustrative)",
+      "scoring_field": "hiring_front_desk"
+    },
+    {
+      "name": "Opened a new branch",
+      "where": "Company website, Google Business listings, local press",
+      "dated": true,
+      "max_age_days": 365,
+      "why_now": "A second diary has just appeared",
+      "reliability": "High",
+      "reliability_reason": "dated, public, and seen before 2 of 4 wins",
+      "link_to_pain": "Look-back: new branch before 2 of 4 wins, 0 of 2 losses (illustrative)",
+      "scoring_field": "new_branch"
+    }
+  ],
+  "market": {
+    "companies": 3200,
+    "count_basis": "counted",
+    "count_source": "Illustrative: dental council register, retrieved [date]",
+    "count_source_type": "register",
+    "sam_companies": 1344,
+    "reachable_contacts": 2688,
+    "currency": "USD",
+    "tam": 15360000,
+    "sam": 6451200,
+    "sizing_file": "sizing-single.json"
+  },
+  "sales_capacity": {
+    "reps": 1,
+    "meetings_per_rep_per_month": 10,
+    "close_rate_pct": 20,
+    "source": "The user (illustrative)"
+  },
+  "tier2_start_rule": "Once every Tier 1 account has been contacted at least once, add as much of Tier 2 as the client can work this quarter.",
+  "assumptions": [
+    "Offer B's value has no customer proof yet"
+  ],
+  "open_questions": [
+    "Is the price per clinic or per group?"
+  ]
+}

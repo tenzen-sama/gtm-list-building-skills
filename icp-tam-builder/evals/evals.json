@@ -1,0 +1,71 @@
+{
+  "skill_name": "icp-tam-builder",
+  "evals": [
+    {
+      "id": 1,
+      "name": "quick-mode-website-only",
+      "prompt": "Quick look before I pitch them: who should getmaxiq.com be selling to, and roughly how big is the market? Website only, I have nothing else.",
+      "expected_output": "Quick mode. States Hypothesis tier and Early Customer Profile label at the top. Asks no blocking questions unless the offer is unclear. ICP table with disqualifiers, no scoring model, no personas, no use packs. Rough bottom-up TAM and SAM as a range, with the company count marked counted or derived. Every web fact cited with URL and retrieval date; no invented prices or counts. No handoff file.",
+      "files": [],
+      "assertions": [
+        "Evidence tier stated as Hypothesis",
+        "Labelled Early Customer Profile, with the customer count against the floor of 8",
+        "No scoring model, personas or use packs produced",
+        "TAM / SAM given as a range, not a single precise figure",
+        "Company count labelled counted or derived",
+        "No price, company count or market figure without a source or an [Assumption] label",
+        "No inputs checklist pause; ends with one line naming the three inputs that would most improve the view",
+        "No icp-handoff.json written: Quick mode has no sign-off or scoring model"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "full-build-score-list",
+      "prompt": "Full ICP and TAM build for a dental-clinic booking software client in Lagos, Abuja and Port Harcourt. They charge about USD 4,800 a year. Use examples/scoring-model.json as a starting point and score examples/accounts.csv. Sales capacity: one rep, about 10 meetings a month, 20% close rate. Go ahead with what's here.",
+      "expected_output": "Full build. Runs score_accounts.py and tam_calc.py rather than doing arithmetic by hand. Reports the near-miss vocabulary flag on 'dental clinics', the straddling '5-20' range and the unknown-heavy booking_complaints field as data issues to fix, rather than trusting Tier 3. Goldilocks checks each reported as Pass / Fail / Unknown with the number against the threshold. Client-facing summary keeps a one-line basis for every assumption-based number.",
+      "files": [
+        "examples/scoring-model.json",
+        "examples/accounts.csv"
+      ],
+      "assertions": [
+        "score_accounts.py was run and its flags are reported",
+        "The 'dental clinics' near miss is called out as a vocabulary fix",
+        "Every Goldilocks check shows Pass, Fail or Unknown with an actual figure",
+        "tam_calc.py was run; SOM basis is sales capacity",
+        "Client-facing summary does not present an assumption as a known fact",
+        "Delivery format: chat summary, full brief document, and a spreadsheet with live formulas",
+        "Inputs checklist shown at the top as 'what would improve this later', with price, capacity and the CSV marked Have, and the work continues in the same turn"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "resonance-check-hypothesis-tier",
+      "prompt": "Here's the ICP we built last week for MaxIQ (it's Hypothesis tier). Will this cold email land with a CRO? 'Hi {first_name}, MaxIQ is the AI-native revenue intelligence platform that unifies your entire customer journey. Want a demo?'",
+      "expected_output": "Resonance check mode only. Verdict with one-line reason; quotes the lines that land or miss and ties each to a documented pain with its source; flags 'customer journey' as a pain buyers did not voice; suggests a rewrite in buyer language; confidence Low because the ICP is Hypothesis tier; recommends testing with 3 to 5 real prospects.",
+      "files": [],
+      "assertions": [
+        "Uses the resonance check output format",
+        "Each Lands / Misses line quotes the asset and names the pain and source",
+        "Confidence in the verdict is Low, with the Hypothesis tier as the reason",
+        "Recommends testing on 3 to 5 real prospects",
+        "Does not rebuild the ICP"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "full-build-opens-with-inputs-checklist",
+      "prompt": "Can you build an ICP and TAM for a client of mine? They're a B2B marketing agency called Example Agency. Their site isn't public yet, so here is the homepage text they sent me:\n\n\"Example Agency: pipeline for B2B software and professional-services firms. We plan and run LinkedIn ads, content and email programmes that turn your buyers' attention into booked meetings. Strategy, creative and reporting in one team, so you deal with one partner instead of three. Book a call to see how we would build your pipeline.\"",
+      "expected_output": "The first reply is the inputs checklist, not analysis: the core list for a services client, with the website marked Have and everything else Missing, a 'What it changes' column, the services delivery-capacity item included, up to five blocking questions with defaults, an offer to draft the client request message, and a clear statement of what tier the user gets if they go with what they have. No crawling, ICP or sizing yet.",
+      "files": [],
+      "assertions": [
+        "First reply contains the inputs checklist with a Status column",
+        "Website marked Have; transcripts, CRM export, price and capacity marked Missing",
+        "Delivery capacity item (services) is on the list",
+        "Blocking questions in the same message, five or fewer, each with a default",
+        "States the tier the user gets if they go ahead now",
+        "Offers to draft the client request message",
+        "Does not research the agency online or produce an ICP, persona or market size in this reply"
+      ]
+    }
+  ]
+}

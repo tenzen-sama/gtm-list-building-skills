@@ -1,0 +1,14 @@
+{
+  "_note": "Illustrative numbers only, matching the worked example in references/frameworks.md. Not real market data. Every input carries a source, so the script's 'Unsourced inputs' list is empty.",
+  "currency": "USD",
+  "acv": 4800,
+  "acv_source": "Illustrative: client's price list, retrieved [date]",
+  "contacts_per_company": 2,
+  "bottom_up": {"companies": 3200, "count_basis": "counted", "count_source": "Illustrative: dental council register, retrieved [date]", "count_source_type": "register", "count_coverage_pct": 90},
+  "top_down": {"market_size": 400000000, "relevance_pct": 20, "subsegment_pct": [30], "source": "Illustrative: sector report, [publisher, year]"},
+  "sam_filters": [
+    {"name": "in the three cities served", "pct": 60, "source": "Illustrative: register addresses, counted by city"},
+    {"name": "reachable by phone and with a web presence", "pct": 70, "source": "Illustrative: hand check of a 50-clinic sample"}
+  ],
+  "som": {"capacity": {"reps": 1, "meetings_per_rep_per_month": 10, "close_rate_pct": 20}, "source": "Illustrative: client's sales lead, call on [date]"}
+}

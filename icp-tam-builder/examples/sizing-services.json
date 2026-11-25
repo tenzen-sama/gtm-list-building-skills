@@ -1,0 +1,15 @@
+{
+  "_note": "Illustrative services client: sales could win 72 clients, but delivery can take only 15 more, so delivery binds.",
+  "currency": "NGN",
+  "acv": 6000000,
+  "bottom_up": {"companies": 900, "count_basis": "counted", "count_source": "Illustrative: trade directory export, retrieved [date]"},
+  "sam_filters": [
+    {"name": "in Lagos and Abuja", "pct": 70},
+    {"name": "has an in-house marketing lead", "pct": 40}
+  ],
+  "som": {
+    "capacity": {"reps": 2, "meetings_per_rep_per_month": 12, "close_rate_pct": 25},
+    "delivery": {"hours_available_per_year": 6000, "hours_per_client_per_year": 240},
+    "existing_clients": 10
+  }
+}

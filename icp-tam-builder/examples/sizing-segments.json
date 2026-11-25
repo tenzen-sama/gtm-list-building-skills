@@ -1,0 +1,13 @@
+{
+  "_note": "Illustrative. Each segment has its own count, ACV, filters and SOM; top_down is checked against the total.",
+  "currency": "USD",
+  "top_down": {"market_size": 400000000, "relevance_pct": 20, "subsegment_pct": [30]},
+  "segments": [
+    {"name": "Small clinics", "companies": 2000, "count_basis": "counted", "acv": 3000,
+     "sam_filters": [{"name": "reachable", "pct": 50}],
+     "som": {"deals_per_year": 10}},
+    {"name": "Large clinics", "companies": 400, "count_basis": "derived", "acv": 12000,
+     "sam_filters": [{"name": "reachable", "pct": 30}],
+     "som": {"capacity": {"reps": 1, "meetings_per_rep_per_month": 4, "close_rate_pct": 10}}}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "_note": "Illustrative. Any number can be a range; 'low' is the value that gives the smaller market.",
+  "currency": "USD",
+  "acv": {"low": 3600, "base": 4800, "high": 6000},
+  "bottom_up": {"companies": {"low": 2400, "base": 3200, "high": 4000}, "count_basis": "counted"},
+  "top_down": {"market_size": 400000000, "relevance_pct": 20, "subsegment_pct": [30]},
+  "sam_filters": [
+    {"name": "in the three cities served", "pct": 60},
+    {"name": "reachable by phone and with a web presence", "pct": {"low": 50, "base": 70, "high": 85}}
+  ],
+  "som": {"capacity": {"reps": 1, "meetings_per_rep_per_month": 10, "close_rate_pct": {"low": 10, "base": 20, "high": 25}}}
+}

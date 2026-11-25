@@ -1,0 +1,23 @@
+{
+  "name": "Private dental clinics (illustrative)",
+  "version": "1.0",
+  "date": "2026-11-17",
+  "as_of": "2026-11-17",
+  "bands": {"T1": 80, "T2": 50},
+  "readiness_high": 50,
+  "high_fit_tiers": ["T1", "T2"],
+  "disqualifiers": [
+    {"field": "city", "op": "not_in", "value": ["lagos", "abuja", "port harcourt"], "reason": "outside the cities served"},
+    {"field": "government_owned", "op": "yes", "reason": "public procurement not supported"}
+  ],
+  "rules": [
+    {"pillar": "fit", "field": "vertical_group", "op": "in", "value": ["dental_clinic"], "points": 0, "required": true, "label": "Private dental clinic (gate)"},
+    {"pillar": "fit", "field": "employees", "op": "between", "value": [10, 50], "points": 30, "label": "10 to 50 staff"},
+    {"pillar": "fit", "field": "has_practice_manager", "op": "yes", "points": 30, "label": "Dedicated practice manager"},
+    {"pillar": "fit", "field": "online_booking", "op": "yes", "points": 20, "label": "Already takes online bookings"},
+    {"pillar": "fit", "field": "branches", "op": "gte", "value": 2, "points": 20, "label": "Two or more branches"},
+    {"pillar": "readiness", "field": "hiring_front_desk", "op": "yes", "points": 40, "date_field": "hiring_front_desk_date", "max_age_days": 90, "label": "Hiring front-desk staff"},
+    {"pillar": "readiness", "field": "new_branch", "op": "yes", "points": 35, "date_field": "new_branch_date", "max_age_days": 365, "label": "Opened a new branch"},
+    {"pillar": "readiness", "field": "booking_complaints", "op": "truthy", "points": 25, "label": "Reviews complain about booking"}
+  ]
+}

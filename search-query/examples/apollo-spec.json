@@ -1,0 +1,62 @@
+{
+  "spec_version": "1",
+  "tool": "apollo",
+  "name": "Revenue leaders at US and UK data-infrastructure software companies",
+  "built_from": "The user's plain-language request in their 17 Nov 2026 chat (titles, 100-5000 staff, four industries, keywords, US 70% / UK 30%, signals A-D, exclusions a-b)",
+  "base": {
+    "page_type": "people",
+    "titles": [
+      "chief revenue officer",
+      "vice president of sales",
+      "vice president of revenue operations",
+      "head of revenue operations",
+      "vice president of sales operations",
+      "head of sales operations",
+      "revenue operations manager",
+      "vice president of customer success"
+    ],
+    "headcount": [{"min": 100, "max": 5000}],
+    "industries": ["Computer Software", "Information Technology & Services", "Computer & Network Security", "Computer Hardware"],
+    "keywords": [
+      "data infrastructure", "data platform", "data engineering infrastructure",
+      "cloud", "cloud infrastructure", "cloud computing",
+      "storage", "data storage", "storage systems",
+      "cybersecurity", "cyber security", "information security",
+      "AI infrastructure", "artificial intelligence infrastructure", "machine learning infrastructure",
+      "developer tools", "developer tooling", "software development tools"
+    ],
+    "technologies": ["Salesforce"],
+    "department_headcount": [{"department": "Sales", "min": 20}],
+    "exclude_technologies": ["not using Salesforce"]
+  },
+  "searches": [
+    {
+      "name": "US base (about 70% of the list)",
+      "set": {"person_locations": ["united states"], "company_locations": ["united states"]}
+    },
+    {
+      "name": "UK base (about 30% of the list)",
+      "set": {"person_locations": ["united kingdom"], "company_locations": ["united kingdom"]}
+    },
+    {
+      "name": "US, signal C: new in role in the last 90 days",
+      "set": {"person_locations": ["united states"], "company_locations": ["united states"],
+              "days_in_current_role": {"min": 0, "max": 90}}
+    },
+    {
+      "name": "UK, signal C: new in role in the last 90 days",
+      "set": {"person_locations": ["united kingdom"], "company_locations": ["united kingdom"],
+              "days_in_current_role": {"min": 0, "max": 90}}
+    },
+    {
+      "name": "US, signal B: hiring for RevOps or Sales Ops",
+      "set": {"person_locations": ["united states"], "company_locations": ["united states"],
+              "job_postings": ["revenue operations", "sales operations", "forecasting"]}
+    },
+    {
+      "name": "US, signal D: recent funding",
+      "set": {"person_locations": ["united states"], "company_locations": ["united states"],
+              "funding": {"within_days": 365}}
+    }
+  ]
+}

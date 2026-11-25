@@ -1,0 +1,13 @@
+[
+  {"domain": "example-clinic-1.test",
+   "vertical_group": {"value": "dental_clinic", "source_url": "https://example-clinic-1.test/", "retrieved_on": "2026-11-17", "confidence": "high"},
+   "employees": {"value": "11-50", "source_url": "https://example-clinic-1.test/team", "retrieved_on": "2026-11-17", "confidence": "medium"},
+   "locations": {"value": ["Lekki", "Ikeja"], "source_url": "https://example-clinic-1.test/contact", "retrieved_on": "2026-11-17", "confidence": "high"},
+   "hiring_front_desk": {"value": "yes", "source_url": "https://jobs.example.test/clinic-1-receptionist", "retrieved_on": "2026-11-17", "confidence": "high"},
+   "hiring_front_desk_date": {"value": "2026-11-01", "source_url": "https://jobs.example.test/clinic-1-receptionist", "retrieved_on": "2026-11-17", "confidence": "high"}},
+  {"domain": "example-clinic-2.test",
+   "vertical_group": {"value": "unknown", "source_url": "", "retrieved_on": "2026-11-17", "confidence": "low"},
+   "employees": {"value": "unknown", "source_url": "", "retrieved_on": "2026-11-17", "confidence": "low"},
+   "hiring_front_desk": {"value": "no", "source_url": "https://example-clinic-2.test/careers", "retrieved_on": "2026-11-17", "confidence": "medium"},
+   "hiring_front_desk_date": {"value": "unknown", "source_url": "", "retrieved_on": "2026-11-17", "confidence": "low"}}
+]

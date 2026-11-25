@@ -1,0 +1,75 @@
+{
+  "_note": "Status of each Prospeo filter key this skill writes. seen = in a link captured from the user's own Prospeo dashboard; documented = in Prospeo's official filters documentation (https://prospeo.io/api-docs/filters-documentation, last updated 5 Aug 2026, read 22 Nov 2026), which says the dashboard's own 'Search API' view shows the same payload, but not yet seen in a link from the user's account; locked = needs a higher plan than the user's (Free). Mark a key seen with: prospeo_links.py confirm-key <key> \"<link from the user's dashboard>\". Plans: the docs give a 'Minimum plan' line only for restricted filters (verified 22 Nov 2026: Starter for revenue, funding, technology, job postings; Growth for job change; Pro for key execs). The ten filters marked Free here have no such line; that they work on Free is an inference from that silence, matching the Help Center's premium-filters table, which doesn't list them.",
+  "user_plan": "Free",
+  "keys": {
+    "person_job_title": {
+      "status": "seen",
+      "min_plan": "Free",
+      "source": "User's two captured title links, 17 Nov 2026"
+    },
+    "person_location_search": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "company_location_search": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "company_headcount_custom": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "company_headcount_range": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "company_industry": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "company_keywords": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "person_seniority": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "person_department": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "company_headcount_by_department": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "person_time_in_current_role": {
+      "status": "documented",
+      "min_plan": "Free"
+    },
+    "company_technology": {
+      "status": "locked",
+      "min_plan": "Starter"
+    },
+    "company_job_posting_hiring_for": {
+      "status": "locked",
+      "min_plan": "Starter"
+    },
+    "company_funding": {
+      "status": "locked",
+      "min_plan": "Starter"
+    },
+    "company_revenue": {
+      "status": "locked",
+      "min_plan": "Starter"
+    },
+    "person_job_change": {
+      "status": "locked",
+      "min_plan": "Growth"
+    },
+    "company_key_execs": {
+      "status": "locked",
+      "min_plan": "Pro"
+    }
+  }
+}

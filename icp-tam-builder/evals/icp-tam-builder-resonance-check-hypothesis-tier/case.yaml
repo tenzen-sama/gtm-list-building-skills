@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: icp-tam-builder-resonance-check-hypothesis-tier
+expected_outcome: |
+  Resonance check mode only, using the attached icp-brief.md (a fictional test fixture). Verdict with one-line reason; quotes the lines that land or miss and ties each to a documented pain with its source; flags 'customer journey' as a pain buyers did not voice; suggests a rewrite in buyer language ("a guess every Monday", "the Monday spreadsheet scramble"); confidence Low because the ICP is Hypothesis tier; recommends a read-through with 3 to 5 real prospects as a sense check. Says the CRO signs but the brief names the RevOps lead as the champion, so the email is aimed at the wrong person. Finds that the email fails the name-swap test, and flags 'Want a demo?' as a big ask for a first cold message. Runs the cold-message checks (offer plain in the first lines, word count, ask aimed at a reply).
+context:
+  scaffold_script: place-files.sh

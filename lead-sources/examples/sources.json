@@ -1,0 +1,73 @@
+{
+  "sources_version": "1",
+  "_note": "Illustrative only. Matches icp-tam-builder/examples/icp-handoff.json (the dental booking example). Every source, count and URL here is made up for the example; the .test URLs are not real sites.",
+  "client": {"name": "Example dental booking software (illustrative)", "client_type": "b2b_software"},
+  "built_from": {"handoff": "icp-handoff.json", "date": "2026-11-20"},
+  "review": {"status": "reviewed"},
+  "market_count": {"companies": 3200, "count_basis": "counted"},
+  "hit_lines": [
+    {"id": "H1", "job": "market", "target": "private dental clinic in Lagos, Abuja, Port Harcourt", "line": "A source that lists private dental clinics in Lagos, Abuja or Port Harcourt, with the name and one more field (address, branch count or phone)."},
+    {"id": "H2", "job": "signal", "target": "2+ reviews in 90 days say calls or bookings go unanswered", "line": "A source showing dated reviews of a named clinic that can be counted over 90 days."},
+    {"id": "H3", "job": "signal", "target": "Hiring front-desk staff", "line": "A source showing dated front-desk or receptionist job posts by named clinics."},
+    {"id": "H4", "job": "signal", "target": "Opened a new branch", "line": "A source showing when a named clinic opened a branch."},
+    {"id": "H5", "job": "people", "target": "champion and economic buyer", "line": "A source naming a clinic's practice manager, owner or principal dentist."}
+  ],
+  "sources": [
+    {
+      "id": "S1", "name": "Example dental council register of licensed premises", "url": "https://register.example.test/premises",
+      "source_type": "Sector regulator and licence registers", "jobs": ["H1"], "rank": "start",
+      "lists": "Licensed dental premises, by state", "fields": ["name", "address", "state", "licence status", "licence date"],
+      "records": 2600, "coverage_pct": 81, "coverage_note": "2,600 of the 3,200 counted; the register lists premises, so multi-branch groups appear once per branch",
+      "date": "updated 2026-10-01", "checked_on": "2026-11-20", "access": "free", "cost_note": "Free search; no bulk download",
+      "format": "html", "terms": "allowed", "terms_note": "Terms page permits reuse with attribution",
+      "reliability": "High", "reliability_reason": "Official, dated, and 27 of 30 sampled premises still operate",
+      "sample": {"size": 30, "exists": 27, "fits_tier1": 22, "fields_ok": 28, "second_source": "Google Business listings and clinic websites", "file": "samples/S1.csv"},
+      "filters_to_try": []
+    },
+    {
+      "id": "S2", "name": "Example business-listing directory", "url": "https://listings.example.test/dentists",
+      "source_type": "Aggregator and scraped directories", "jobs": ["H1"], "rank": "add",
+      "lists": "Dental clinic listings with phone numbers", "fields": ["name", "phone", "address"],
+      "records": 900, "coverage_pct": 28, "coverage_note": "900 listings against 3,200; adds phone numbers the register lacks",
+      "date": "no date shown", "checked_on": "2026-11-20", "access": "free", "cost_note": "Free to view",
+      "format": "html", "terms": "forbids_automated", "terms_note": "Terms forbid scraping",
+      "reliability": "Low", "reliability_reason": "No stated method, undated, and 6 of 25 sampled listings had closed",
+      "sample": {"size": 25, "exists": 19, "fits_tier1": 15, "fields_ok": 18, "second_source": "The S1 register", "file": "samples/S2.csv"},
+      "filters_to_try": []
+    },
+    {
+      "id": "S3", "name": "Google Business reviews", "url": "https://maps.example.test/reviews",
+      "source_type": "Review sites and maps reviews", "jobs": ["H2", "H4"], "rank": "signal",
+      "lists": "Dated reviews and opening details per listing", "fields": ["review text", "review date", "listing opened"],
+      "records": null, "coverage_pct": null, "coverage_note": "Per clinic, not a list",
+      "date": "live", "checked_on": "2026-11-20", "access": "free", "cost_note": "Free to view",
+      "format": "search_only", "terms": "forbids_automated", "terms_note": "Terms limit automated collection",
+      "reliability": "Medium", "reliability_reason": "Dated, but reviews can be posted by anyone",
+      "sample": null, "filters_to_try": []
+    },
+    {
+      "id": "S4", "name": "Example job board", "url": "https://jobs.example.test/receptionist",
+      "source_type": "Job boards and careers pages", "jobs": ["H3"], "rank": "signal",
+      "lists": "Dated job posts by employer", "fields": ["employer", "title", "date posted", "location"],
+      "records": null, "coverage_pct": null, "coverage_note": "Per search, not a list",
+      "date": "live", "checked_on": "2026-11-20", "access": "free", "cost_note": "Free",
+      "format": "html", "terms": "unclear", "terms_note": "No terms page found",
+      "reliability": "Medium", "reliability_reason": "Dated posts; employer names sometimes hidden",
+      "sample": null, "filters_to_try": []
+    },
+    {
+      "id": "S5", "name": "Apollo", "url": "https://www.apollo.io",
+      "source_type": "B2B databases", "jobs": ["H5"], "rank": "people",
+      "lists": "People by title and company", "fields": ["name", "title", "company", "email (credits)"],
+      "records": null, "coverage_pct": null, "coverage_note": "Not measured: clinic coverage in this market unknown until the list builder samples it",
+      "date": "live", "checked_on": "2026-11-20", "access": "paid", "cost_note": "Free plan limits apply; see tool-docs/apollo-filters.md",
+      "format": "search_only", "terms": "allowed", "terms_note": "Use within the user's own plan",
+      "reliability": "Medium", "reliability_reason": "Third-party database; coverage of small clinics untested",
+      "sample": null,
+      "filters_to_try": ["job title: practice manager, clinic manager, operations manager", "job title: owner, principal dentist, medical director", "industry: dental clinic", "location: Lagos, Abuja, Port Harcourt"]
+    }
+  ],
+  "gaps": [],
+  "search": {"rounds": 3, "searches": 41, "exa_calls": 12, "empty_rounds_at_end": 2, "log": "search-log.csv"},
+  "cannot_see": ["paid database records beyond the user's plan", "private WhatsApp groups of practice managers", "pages behind logins"]
+}

@@ -1,0 +1,10 @@
+company,crm_status,city,government_owned,vertical_group,employees,has_practice_manager,online_booking,branches,hiring_front_desk,hiring_front_desk_date,new_branch,new_branch_date,booking_complaint_reviews_90d,latest_booking_complaint_date
+Example Clinic 1,prospect,Lagos,no,dental_clinic,11-50,yes,yes,3,yes,2026-11-01,yes,2026-06-01,2,2026-11-05
+Example Clinic 2,prospect,unknown,no,dental_clinic,20,yes,no,1,no,,no,,0,
+Example Clinic 3,prospect,Abuja,no,unknown,25,yes,yes,2,yes,2026-10-20,no,,,
+Example Clinic 4,prospect,Lagos,no,dental clinics,30,yes,yes,2,yes,2026-09-01,no,,,
+Example Clinic 5,prospect,Port Harcourt,no,dental_clinic,"5-20",tbc,yes,1,Not hiring,,no,,Not found,
+Example Clinic 6,prospect,Ibadan,no,dental_clinic,40,yes,yes,4,yes,2026-11-10,yes,2026-10-01,3,2026-11-02
+Example Clinic 7,prospect,Lagos,yes,dental_clinic,60,yes,yes,5,no,,no,,0,
+Example Clinic 8,prospect,Abuja,no,dental_clinic,about 15 staff,yes,yes,2+,yes,,yes,2025-08-01,0,
+Example Clinic 9,customer,Lagos,no,dental_clinic,30,yes,yes,2,no,,no,,1,2026-10-15

@@ -1,0 +1,27 @@
+{
+  "name": "Private dental clinics (illustrative)",
+  "version": "2.0",
+  "date": "2026-11-20",
+  "as_of": "2026-11-17",
+  "built_from": "Illustrative: clients/example-dental/brief.md, 17 Nov 2026",
+  "evidence_tier": "Grounded (illustrative)",
+  "readiness_status": "untested: keep a signal's points only if it beats the no-signal campaign (scoring-and-validation.md, Validating the model)",
+  "bands": {"T1": 80, "T2": 50},
+  "readiness_high": 50,
+  "high_fit_tiers": ["T1"],
+  "disqualifiers": [
+    {"field": "crm_status", "op": "in", "value": ["customer", "open deal"], "reason": "current customer or open deal: do not prospect", "evidence": "Client's CRM export (illustrative)"},
+    {"field": "city", "op": "not_in", "value": ["lagos", "abuja", "port harcourt"], "reason": "outside the cities served", "evidence": "Blocking question 3: the client serves these three cities only (illustrative)"},
+    {"field": "government_owned", "op": "yes", "reason": "public procurement not supported", "evidence": "Lost deals T4 and T5 (illustrative)"}
+  ],
+  "rules": [
+    {"pillar": "fit", "field": "vertical_group", "op": "in", "value": ["dental_clinic"], "points": 0, "required": true, "label": "Private dental clinic (gate)", "evidence": "All 4 won calls are dental clinics; both physiotherapy calls lost (illustrative)"},
+    {"pillar": "fit", "field": "employees", "op": "between", "value": [10, 50], "points": 30, "label": "10 to 50 staff", "evidence": "Separator test, 4 won v 2 lost (illustrative)"},
+    {"pillar": "fit", "field": "has_practice_manager", "op": "yes", "points": 30, "label": "Dedicated practice manager", "evidence": "Champion on 3 of 4 won calls (illustrative)"},
+    {"pillar": "fit", "field": "online_booking", "op": "yes", "points": 20, "label": "Already takes online bookings", "evidence": "Separator test (illustrative)"},
+    {"pillar": "fit", "field": "branches", "op": "gte", "value": 2, "points": 20, "label": "Two or more branches", "evidence": "Why they buy: one diary across branches, T1 and T3 (illustrative)"},
+    {"pillar": "readiness", "field": "booking_complaint_reviews_90d", "op": "gte", "value": 2, "points": 45, "date_field": "latest_booking_complaint_date", "max_age_days": 90, "label": "2+ reviews in 90 days say calls or bookings go unanswered", "evidence": "Step 4 heuristic for the top pain (unanswered calls, 3 of 4 wins) (illustrative)"},
+    {"pillar": "readiness", "field": "hiring_front_desk", "op": "yes", "points": 30, "date_field": "hiring_front_desk_date", "max_age_days": 90, "label": "Hiring front-desk staff", "evidence": "Look-back: front-desk job post before 3 of 4 wins, 0 of 2 losses (illustrative)"},
+    {"pillar": "readiness", "field": "new_branch", "op": "yes", "points": 25, "date_field": "new_branch_date", "max_age_days": 365, "label": "Opened a new branch", "evidence": "Look-back: new branch before 2 of 4 wins, 0 of 2 losses (illustrative)"}
+  ]
+}

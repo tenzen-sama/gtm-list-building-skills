@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: refresh-mode-updates-existing-icp
+expected_outcome: |
+  Refresh mode. Reads the previous brief and model from the files. Puts this round's inputs checklist at the top and carries on. Adds a 'What changed' section in from/to form with n. Moves the tier from Hypothesis (to Grounded, as call transcripts now exist, or explains why not) and keeps the Early Customer Profile label. Bumps the model version with a change-log entry. Tier 1 and disqualifiers are unchanged by the three calls (all won dental clinics in the three cities, 11 to 25 staff, two or three branches, a practice or operations manager), so it does not stop for the sign-off and says so in one line. Answer key: unanswered calls 2 of 3 (calls 7, 9); no-shows 1 (call 8); double booking 1 (call 8). Alternatives: a second receptionist (call 7), a shared Google Sheet (call 8), doing nothing and keeping the paper diary (call 9).
+context:
+  scaffold_script: place-files.sh
